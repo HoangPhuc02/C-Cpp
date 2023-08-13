@@ -1,6 +1,6 @@
 aquarists/liquidcrystal_i2c.o: \
-  ..\..\..\Libary\liquidcrystal_i2c\liquidcrystal_i2c.c \
-  ..\..\..\Libary\liquidcrystal_i2c\liquidcrystal_i2c.h \
+  ..\..\..\..\..\IC\liquidcrystal_i2c\liquidcrystal_i2c.c \
+  ..\..\..\..\..\IC\liquidcrystal_i2c\liquidcrystal_i2c.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Core\Inc\stm32f1xx_hal_conf.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h \

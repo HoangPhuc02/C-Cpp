@@ -1,0 +1,12 @@
+*.elf
+*.o
+*.bin
+*.objdump
+*.srec
+*.list
+*.diss
+*.so
+*.map
+build/
+cmake-build-debug/
+.idea/

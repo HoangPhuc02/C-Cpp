@@ -1,9 +1,9 @@
 --cpu Cortex-M3
 "aquarists\startup_stm32f103xb.o"
-"aquarists\liquidcrystal_i2c.o"
 "aquarists\main.o"
 "aquarists\stm32f1xx_it.o"
 "aquarists\stm32f1xx_hal_msp.o"
+"aquarists\liquidcrystal_i2c.o"
 "aquarists\stm32f1xx_hal_gpio_ex.o"
 "aquarists\stm32f1xx_hal_i2c.o"
 "aquarists\stm32f1xx_hal.o"

@@ -168,7 +168,16 @@ uint8_t special4[8] = {
 		if(GPIO_PIN_RESET == HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_5))
 		{
 			while(GPIO_PIN_RESET == HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_5));
+			LCD_SetCursor(0,0);
 			sprintf(str,"%d",++count);
+			LCD_PrintStr(str);
+			HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_4);
+		}
+		if(GPIO_PIN_RESET == HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_8))
+		{
+			while(GPIO_PIN_RESET == HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_8));
+			LCD_SetCursor(0,0);
+			sprintf(str,"%d",--count);
 			LCD_PrintStr(str);
 			HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_4);
 		}
@@ -279,6 +288,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+	
+	/*Configure GPIO pin : PB8 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
 
 }
 

@@ -27,4 +27,4 @@ aquarists/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  ..\..\..\Libary\liquidcrystal_i2c\liquidcrystal_i2c.h
+  ..\..\..\..\..\IC\liquidcrystal_i2c\liquidcrystal_i2c.h
