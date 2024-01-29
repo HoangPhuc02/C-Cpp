@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "gpio.h": "c",
+        "uart.h": "c",
+        "uart_types.h": "c",
+        "soc_caps.h": "c",
+        "esp_err.h": "c",
+        "esp_intr_alloc.h": "c",
+        "freertos.h": "c",
+        "clk.h": "c",
+        "esp_clk.h": "c"
+    },
+    "idf.adapterTargetName": "esp32"
+}

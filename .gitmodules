@@ -1,0 +1,6 @@
+[submodule "Embedded_C99/Microcontroller/stm32f10x/test_lib/Aquarists/sample_project/esp_littlefs"]
+	path = Embedded_C99/Microcontroller/stm32f10x/test_lib/Aquarists/sample_project/esp_littlefs
+	url = https://github.com/joltwallet/esp_littlefs.git
+[submodule "Esp32_C++/Test_lib/old_ver_2/sample_project/esp_littlefs"]
+	path = Esp32_C++/Test_lib/old_ver_2/sample_project/esp_littlefs
+	url = https://github.com/joltwallet/esp_littlefs.git

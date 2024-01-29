@@ -1,0 +1,28 @@
+CMake Error at E:/Workspace/libary_emb/esp_framework/ide_tool_path/tools/cmake/3.24.0/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "E:/Workspace/libary_emb/esp_framework/ide_tool_path/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: E:/Workspace/libary_emb/C-C++/Esp32_C++/Test_lib/blink/build/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):E:/Workspace/libary_emb/esp_framework/ide_tool_path/tools/ninja/1.10.2/ninja.exe cmTC_7245b && [1/2] Building C object CMakeFiles/cmTC_7245b.dir/testCCompiler.c.obj
+    FAILED: CMakeFiles/cmTC_7245b.dir/testCCompiler.c.obj 
+    E:\Workspace\libary_emb\esp_framework\ide_tool_path\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address -o CMakeFiles/cmTC_7245b.dir/testCCompiler.c.obj -c E:/Workspace/libary_emb/C-C++/Esp32_C++/Test_lib/blink/build/CMakeFiles/CMakeTmp/testCCompiler.c
+    cc1.exe: fatal error: E:/Workspace/libary_emb/C-C++/Esp32_C++/Test_lib/blink/build/CMakeFiles/CMakeTmp/testCCompiler.c: No such file or directory
+    compilation terminated.
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  E:/Workspace/libary_emb/esp_framework/container/esp-idf/tools/cmake/project.cmake:448 (__project)
+  CMakeLists.txt:6 (project)
+
+

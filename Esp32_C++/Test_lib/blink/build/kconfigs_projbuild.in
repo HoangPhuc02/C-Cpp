@@ -1,0 +1,6 @@
+source "E:/Workspace/libary_emb/esp_framework/container/esp-idf/components/bootloader/Kconfig.projbuild"
+source "E:/Workspace/libary_emb/esp_framework/container/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "E:/Workspace/libary_emb/esp_framework/container/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "E:/Workspace/libary_emb/esp_framework/container/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "E:/Workspace/libary_emb/esp_framework/container/esp-idf/components/partition_table/Kconfig.projbuild"
+source "E:/Workspace/libary_emb/C-C++/Esp32_C++/Test_lib/blink/main/Kconfig.projbuild"

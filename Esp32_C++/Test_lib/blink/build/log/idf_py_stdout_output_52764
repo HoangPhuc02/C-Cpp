@@ -1,0 +1,13 @@
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.42.0.windows.2") 
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: E:/Workspace/libary_emb/esp_framework/ide_tool_path/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: E:/Workspace/libary_emb/esp_framework/ide_tool_path/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Check for working C compiler: E:/Workspace/libary_emb/esp_framework/ide_tool_path/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe - broken
+-- Configuring incomplete, errors occurred!
+See also "E:/Workspace/libary_emb/C-C++/Esp32_C++/Test_lib/blink/build/CMakeFiles/CMakeOutput.log".
+See also "E:/Workspace/libary_emb/C-C++/Esp32_C++/Test_lib/blink/build/CMakeFiles/CMakeError.log".

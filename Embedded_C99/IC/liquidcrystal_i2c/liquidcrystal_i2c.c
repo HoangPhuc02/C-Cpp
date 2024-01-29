@@ -1,6 +1,8 @@
 #include "liquidcrystal_i2c.h"
 
 extern I2C_HandleTypeDef hi2c1;
+extern TIM_HandleTypeDef htim1;
+
 
 uint8_t dpFunction;
 uint8_t dpControl;
@@ -270,27 +272,37 @@ static void PulseEnable(uint8_t _data)
 
 static void DelayInit(void)
 {
-  CoreDebug->DEMCR &= ~CoreDebug_DEMCR_TRCENA_Msk;
-  CoreDebug->DEMCR |=  CoreDebug_DEMCR_TRCENA_Msk;
-
-  DWT->CTRL &= ~DWT_CTRL_CYCCNTENA_Msk; //~0x00000001;
-  DWT->CTRL |=  DWT_CTRL_CYCCNTENA_Msk; //0x00000001;
-
-  DWT->CYCCNT = 0;
-
-  /* 3 NO OPERATION instructions */
-  __ASM volatile ("NOP");
-  __ASM volatile ("NOP");
-  __ASM volatile ("NOP");
+	HAL_TIM_Base_Start(&htim1);
+}
+static void DelayUS(uint32_t time)
+{
+	__HAL_TIM_SET_COUNTER(&htim1,0);
+	while(__HAL_TIM_GET_COUNTER(&htim1)<time){}
 }
 
-static void DelayUS(uint32_t us) {
-  uint32_t cycles = (SystemCoreClock/1000000L)*us;
-  uint32_t start = DWT->CYCCNT;
-  volatile uint32_t cnt;
-
-  do
-  {
-    cnt = DWT->CYCCNT - start;
-  } while(cnt < cycles);
-}
+//static void DelayInit(void)
+//{
+//  CoreDebug->DEMCR &= ~CoreDebug_DEMCR_TRCENA_Msk;
+//  CoreDebug->DEMCR |=  CoreDebug_DEMCR_TRCENA_Msk;
+//
+//  DWT->CTRL &= ~DWT_CTRL_CYCCNTENA_Msk; //~0x00000001;
+//  DWT->CTRL |=  DWT_CTRL_CYCCNTENA_Msk; //0x00000001;
+//
+//  DWT->CYCCNT = 0;
+//
+//  /* 3 NO OPERATION instructions */
+//  __ASM volatile ("NOP");
+//  __ASM volatile ("NOP");
+//  __ASM volatile ("NOP");
+//}
+//
+//static void DelayUS(uint32_t us) {
+//  uint32_t cycles = (SystemCoreClock/1000000L)*us;
+//  uint32_t start = DWT->CYCCNT;
+//  volatile uint32_t cnt;
+//
+//  do
+//  {
+//    cnt = DWT->CYCCNT - start;
+//  } while(cnt < cycles);
+//}

@@ -1,0 +1,12 @@
+../Src/DHT.c:3:13:DELAY_TIM_Init	16	static
+../Src/DHT.c:8:13:DELAY_TIM_Us	16	static
+../Src/DHT.c:15:13:DHT_DelayInit	16	static
+../Src/DHT.c:19:13:DHT_DelayUs	16	static
+../Src/DHT.c:24:13:DHT_SetPinOut	32	static
+../Src/DHT.c:32:13:DHT_SetPinIn	32	static
+../Src/DHT.c:40:13:DHT_WritePin	16	static
+../Src/DHT.c:44:16:DHT_ReadPin	24	static
+../Src/DHT.c:52:16:DHT_Start	24	static
+../Src/DHT.c:73:16:DHT_Read	24	static
+../Src/DHT.c:92:6:DHT_Init	24	static
+../Src/DHT.c:108:9:DHT_ReadTempHum	32	static

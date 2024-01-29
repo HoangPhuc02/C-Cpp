@@ -1,0 +1,12 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "files.associations": {
+    "uart.h": "c",
+    "uart_types.h": "c",
+    "clk_tree_defs.h": "c",
+    "ringbuf.h": "c"
+  },
+  "idf.portWin": "COM5",
+  "idf.flashType": "UART",
+  "idf.adapterTargetName": "esp32"
+}
